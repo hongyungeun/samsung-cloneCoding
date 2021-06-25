@@ -476,3 +476,22 @@ header .gnb > ul > li {
     content: 'JBL 75주년';
     padding: 3px;
 }
+
+
+
+/* ========================= 웹표준, 웹접근성 skip ========================= */
+#skip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    background: #000;
+    color: var(--primary-color);
+    z-index: 9999;
+    text-align: center;
+}
+#skip:focus
+{
+    transform: translateY(0);
+}

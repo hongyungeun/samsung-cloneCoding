@@ -123,8 +123,8 @@ header .gnb > ul > li {
     color: #fff;
 }
 /* ------------banner slick-------------- */
-.slick-prev,
-.slick-next {
+.main-banner-wrap .slick-prev,
+.main-banner-wrap .slick-next {
     position: absolute;
     top: 50%;
     z-index: 2;
@@ -136,18 +136,18 @@ header .gnb > ul > li {
     border: none;
     cursor: pointer;
 }
-.slick-prev {
-    left: 0;
+.main-banner-wrap .slick-prev {
+    left: 3%;
 }
-.slick-next {
-    right: 0;
+.main-banner-wrap .slick-next {
+    right: 3%;
 }
-.slick-next:after {
+.main-banner-wrap .slick-next:after {
     content: "\e93e";
     font-size: 40px;
     font-family: xeicon!important;
 }
-.slick-prev::before {
+.main-banner-wrap .slick-prev::before {
     content: "\e93b";
     font-size: 40px;
     font-family: xeicon!important;
@@ -199,9 +199,280 @@ header .gnb > ul > li {
     padding: 1rem;
     padding-top: 5rem;
 }
+
 .sub-item-img-box {
     display: inline-block;
     width: 25%;
+    padding: 2rem;
+    
+}
+.sub-item-img-box2 {
+    display: inline-block;
+    width: 50%;
     padding: 1rem;
     
+}
+.sub-banner-left {
+    max-width: 25%;
+    float: left;
+    vertical-align: top;
+    /* padding: 1rem; */
+}
+.sub-item-img-box3 {
+    display: inline-block;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    background: #f4f4f4;
+    border-radius: 20px;
+}
+.sub-item-img-box3 img {
+    max-width: 80%;
+}
+.sub-item-padding-box {
+    padding: 10px;
+    display: inline-block;
+}
+.sub-item-img-box3 img {
+    margin: 0 auto;
+}
+.sub2-banner-desc {
+    text-align: center;
+}
+.sub2-banner-desc .sub2-desc-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+.sub2-banner-desc .model-name {
+    font-size: 12px;
+    padding-top: 4px;
+}
+.sub2-banner-desc .price {
+    font-size: 14px;
+    padding-top: 12px;
+}
+.sub-item-img-box4 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: #f4f4f4;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.sub-item-center-box {
+    max-width: 50%;
+    float: left;
+    height: inherit;
+    padding: 10px;
+}
+.sub-item-img-box5 {
+    display: inline-block;
+    width: 33.3333%;
+    padding: 1rem;
+}
+.box5-padding-box {
+    overflow: hidden;
+    border-radius: 30px;
+}
+.sub-item-img-box5 img {
+    width: 100%;
+}
+.sub-banner-wrap .slick-prev,
+.sub-banner-wrap .slick-next {
+    display: none !important;
+}
+/* ------------sub-banner-slick------------- */
+.sub-banner-wrap .slick-dots {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+}
+.sub-banner-wrap .slick-dots li button{
+    font-size: 0;
+    border: none;
+}
+.sub-banner-wrap .slick-dots li {
+    font-size: 18px;
+    cursor: pointer;
+    color: #000;
+    display: inline-block;
+    margin-right: 40px;
+    font-weight: bold;
+}
+.sub-banner-wrap .slick-dots li:nth-child(1):after {
+    content: '셀렉트샵';
+    padding: 5px;
+    border-bottom: 2px solid rgba(153, 153, 153, 0.521);
+}
+.sub-banner-wrap .slick-dots li:nth-child(2):after {
+    content: '삼성케어플러스';
+    padding: 5px;
+    border-bottom: 2px solid rgba(153, 153, 153, 0.521);
+}
+.sub-banner-wrap .slick-dots li:nth-child(3):after {
+    content: '새로운 갤럭시';
+    padding: 5px;
+    border-bottom: 2px solid rgba(153, 153, 153, 0.521);
+}
+.sub-banner-wrap .slick-dots li:nth-child(4):after {
+    content: '특별한 혜택';
+    padding: 5px;
+    border-bottom: 2px solid rgba(153, 153, 153, 0.521);
+}
+
+/* ----------------slider3-------------- */
+.third-banner {
+    position: relative;
+}
+.third-banner h2 {
+    text-align: center;
+    position: absolute;
+    font-size: 28px;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.sub3-slider-wrap {
+    margin: 0 auto;
+    text-align: center;
+}
+.sldier-banner1 {
+    
+}
+.slider-img-box {
+    position: relative;
+}
+.slider-desc {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.slider-desc-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.slider-desc-sub {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.slider-desc-white {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    color: #fff;
+}
+
+/* slider-slick */
+.sub3-slider-wrap .slick-prev,
+.sub3-slider-wrap .slick-next {
+    display: none !important;
+}
+.sub3-slider-wrap .slick-dots {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+}
+.sub3-slider-wrap .slick-dots li button{
+    font-size: 0;
+    border: none;
+}
+.sub3-slider-wrap .slick-dots li {
+    font-size: 18px;
+    cursor: pointer;
+    color: #000;
+    display: inline-block;
+    margin-right: 40px;
+    font-weight: bold;
+}
+.sub3-slider-wrap .slick-dots li:nth-child(1):after {
+    content: '갤럭시 캠퍼스 스토어';
+    padding: 3px;
+}
+.sub3-slider-wrap .slick-dots li:nth-child(2):after {
+    content: 'Galaxy Line-up';
+    padding: 3px;
+}
+.sub3-slider-wrap .slick-dots li:nth-child(3):after {
+    content: '온라인 체험존';
+    padding: 3px;
+}
+.sub3-slider-wrap .slick-dots li:nth-child(4):after {
+    content: 'Galaxy Studio';
+    padding: 3px;
+}
+
+/* -------------fourth------------------- */
+.fourth-banner h2 {
+    text-align: center;
+    position: absolute;
+    font-size: 28px;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.sub4-slider-wrap {
+    margin: 0 auto;
+    text-align: center;
+}
+.fourth-banner {
+    position: relative;
+}
+.slider-banner-video {
+    width: 100%;
+}
+/* fourth-slick */
+.sub4-slider-wrap .slick-prev,
+.sub4-slider-wrap .slick-next {
+    display: none !important;
+}
+.sub4-slider-wrap .slick-dots {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+    width: 100%;
+}
+.sub4-slider-wrap .slick-dots li button{
+    font-size: 0;
+    border: none;
+}
+.sub4-slider-wrap .slick-dots li {
+    font-size: 18px;
+    cursor: pointer;
+    color: #000;
+    display: inline-block;
+    margin-right: 40px;
+    font-weight: bold;
+}
+.sub4-slider-wrap .slick-dots li:nth-child(1):after {
+    content: '에코페키지';
+    padding: 3px;
+}
+.sub4-slider-wrap .slick-dots li:nth-child(2):after {
+    content: 'The Premiere';
+    padding: 3px;
+}
+.sub4-slider-wrap .slick-dots li:nth-child(3):after {
+    content: 'MICRO LED';
+    padding: 3px;
+}
+.sub4-slider-wrap .slick-dots li:nth-child(4):after {
+    content: '스마트 모니터';
+    padding: 3px;
+}
+.sub4-slider-wrap .slick-dots li:nth-child(5):after {
+    content: 'JBL 75주년';
+    padding: 3px;
 }

@@ -8,7 +8,12 @@ $(document).ready(function(){
     })
     $('.sub-banner-wrap').slick({
       dots: true,
-      
+    });
+    $('.sub3-slider-wrap').slick({
+      dots: true,
+    });
+    $('.sub4-slider-wrap').slick({
+      dots: true,
     });
   });
   

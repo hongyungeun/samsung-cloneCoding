@@ -15,5 +15,20 @@ $(document).ready(function(){
     $('.sub4-slider-wrap').slick({
       dots: true,
     });
+    var $hoverImg = $('.hover-img-box')
+    var $moreBtn = $('.more-btn')
+    var $hoverDesc = $('.hover-desc')
+    $moreBtn.eq(0).hide()
+    $moreBtn.eq(1).hide()
+    $moreBtn.eq(2).hide()
+    $hoverImg.eq(1).hide();
+    $hoverImg.eq(2).hide();
+    $('.hover-desc').mouseover(function(){
+      var idx = $(this).index();
+        $hoverImg.hide();
+        $hoverImg.eq(idx).show();
+        $moreBtn.eq(idx).show(idx);
+    })
+    
   });
   

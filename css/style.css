@@ -21,8 +21,12 @@ img {
 }
 /* ----------------common--------------- */
 .inner {
-    width: 1440px;
+    width: 1300px;
     margin: 0 auto;
+    
+}
+.inner2 {
+    padding:40px;
 }
 .white-btn {
     width: 120px;
@@ -277,6 +281,9 @@ header .gnb > ul > li {
 .sub-item-img-box5 img {
     width: 100%;
 }
+.sub-item-right-box {
+    float: left;
+}
 .sub-banner-wrap .slick-prev,
 .sub-banner-wrap .slick-next {
     display: none !important;
@@ -342,6 +349,9 @@ header .gnb > ul > li {
 .sldier-banner1 {
     
 }
+.slider-video {
+    width: 100%;
+}
 .slider-img-box {
     position: relative;
 }
@@ -377,6 +387,7 @@ header .gnb > ul > li {
 }
 .sub3-slider-wrap .slick-dots {
     position: absolute;
+    width: 100%;
     top: 8%;
     left: 50%;
     transform: translateX(-50%);
@@ -477,21 +488,97 @@ header .gnb > ul > li {
     padding: 3px;
 }
 
+/* -----------------fifth section---------------------- */
 
-
-/* ========================= 웹표준, 웹접근성 skip ========================= */
-#skip {
-    position: fixed;
+.fifth-banner {
+    display: flex;
+    padding-top: 100px;
+}
+.fifth-title {
+    vertical-align: top;
+    margin-top: 200px;
+    margin-right: 100px;
+}
+.fifth-title h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.fifth-title p {
+    font-size: 14px;
+    white-space: nowrap;
+}
+.hover-banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hover-banner {
+    margin-right: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.hover-img-box {
+    vertical-align: top;
+}
+.hover-desc {
+    margin-top: 20px;
+    position: relative;
+    padding: 20px;
+    font-weight: bold;
+}
+.hover-desc::before {
+    content: '';
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    transform: translateY(-100%);
-    background: #000;
-    color: var(--primary-color);
-    z-index: 9999;
-    text-align: center;
+    height: 2px;
+    background: #999;
+    font-size: 15px;
 }
-#skip:focus
-{
-    transform: translateY(0);
+.hover-desc:hover ::before{
+    width: 400px;
+    background: #000;
+}
+.hover-desc:nth-of-type(1) {
+    margin-top: 150px;
+}
+.more-btn {
+    border-bottom: 1px solid #000;
+    font-size: 13px;
+}
+
+/* ------------------sixth--------------- */
+.sixth {
+    text-align: center;
+    margin-top: 100px;
+}
+.sixth img {
+    border-radius: 30px;
+}
+.sixth-sub-title {
+    font-size: 15px;
+}
+.sixth-title {
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+.grid-item {
+    width: 33.3333%;
+    text-align: left;
+    padding: 0 12px;
+    display: inline-block;
+    vertical-align: top;
+}
+.grid-item:nth-of-type(5) {
+    margin-top: -210px;
+}
+.grid-item:nth-of-type(6) {
+    margin-top: -50px;
+}
+.grid-desc {
+    padding: 24px 24px 0;
+}
+.grid-desc h3 {
+    margin: 10px 0;
 }

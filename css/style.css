@@ -501,7 +501,7 @@ header .gnb > ul > li {
 .fifth-title {
     vertical-align: top;
     margin-top: 200px;
-    margin-right: 100px;
+    margin-right: 70px;
 }
 .fifth-title h2 {
     margin-bottom: 30px;
@@ -518,17 +518,24 @@ header .gnb > ul > li {
 }
 .hover-banner {
     margin-right: 50px;
-    border-radius: 30px;
-    overflow: hidden;
+    
 }
 .hover-img-box {
     vertical-align: top;
+}
+.hover-img-box img {
+    border-radius: 30px;
 }
 .hover-desc {
     margin-top: 20px;
     position: relative;
     padding: 20px;
     font-weight: bold;
+    white-space: normal;
+    font-size: 14px;
+}
+.hover-desc strong {
+    white-space: nowrap;
 }
 .hover-desc::before {
     content: '';
@@ -545,7 +552,7 @@ header .gnb > ul > li {
     background: #000;
 }
 .hover-desc:nth-of-type(1) {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 .more-btn {
     border-bottom: 1px solid #000;

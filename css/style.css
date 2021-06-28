@@ -594,3 +594,35 @@ header .gnb > ul > li {
 .grid-desc h3 {
     margin: 10px 0;
 }
+/* footer */
+footer {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+footer h3 {
+    margin-bottom: 30px;
+}
+footer nav {
+    float: left;
+    width: 17%;
+    font-size: 13px;
+    border-right: 1px solid #ddd;
+    padding: 60px 30px;
+    height: 450px;
+}
+footer nav:last-child {
+    border: none;
+}
+footer nav li {
+    padding: 7px 0;
+}
+.footer-large {
+    width: 32%;
+}
+.product {
+    display: inline-block;
+    margin-right: 100px;
+}
+.product li {
+    
+}
